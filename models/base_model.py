@@ -35,7 +35,7 @@ class BaseModel:
         rdict = self._dict_.copy()
         rdict["created_at"] = self.created_at.isoformat()
         rdict["updated_at"] = self.updated_at.isoformat()
-        rdict["_class"] = self.class .name_
+        rdict["_class"] = self.class.name_
         return rdict
 
     def _str_(self):
