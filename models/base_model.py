@@ -1,37 +1,44 @@
 #!/usr/bin/python3
-""" Importing Modules we need """
-import uuid
-from datetime import datetime
+"""."""
 import models
+from uuid import uuid4
+from datetime import datetime
 
 
-class ModelBase:
-    def __init__(self, *args, **kawrgs):
-        """ """
-        self.id = str(uuid.uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = self.created_at
-        if (kawrgs):
-            for key, value in kawrgs.items():
-                if key != "__class__":
-                    setattr(self, value, kawrgs)
+class BaseModel:
+    """."""
+
+    def _init_(self, *args, **kwargs):
+        """.
+        """
+        tform = "%Y-%m-%dT%H:%M:%S.%f"
+        self.id = str(uuid4())
+        self.created_at = datetime.today()
+        self.updated_at = datetime.today()
+        if len(kwargs) != 0:
+            for k, v in kwargs.items():
+                if k == "created_at" or k == "updated_at":
+                    self._dict_[k] = datetime.strptime(v, tform)
+                else:
+                    self._dict_[k] = v
         else:
-            self.id
-            self.created_at = datetime.utcnow()
-
-    def __str__(self):
-        """ """
-        print(f"[<class name>] ({self.id}) {self.__dict__}")
+            models.storage.new(self)
 
     def save(self):
-        """ """
-        self.updated_at = datetime.now()
+        """."""
+        self.updated_at = datetime.today()
+        models.storage.save()
 
     def to_dict(self):
-        """ """
-        self.__dict__
-        self.__class__
-        self.created_at = datetime.isoformat()
-        self.updated_at = datetime.isoformat()
+        """.
+        """
+        rdict = self._dict_.copy()
+        rdict["created_at"] = self.created_at.isoformat()
+        rdict["updated_at"] = self.updated_at.isoformat()
+        rdict["_class"] = self.class .name_
+        return rdict
 
-        return self.__dict__
+    def _str_(self):
+        """."""
+        clname = self._class.name_
+        return "[{}] ({}) {}".format(clname, self.id, self._dict_)
