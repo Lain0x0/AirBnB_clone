@@ -9,41 +9,54 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
-""" Updating FileStorage """
-
-class_storage = {
-        "BaseModel": BaseModel,
-        "User": User,
-        "Place": Place,
-        "Amenity": Amenity,
-        "City": City,
-        "Review": Review,
-        "State": State
-        }
-
 
 class FileStorage:
+    """defined a class to serialize and
+    deserialize json
+    """
+
     __file_path = "file.json"
     __objects = {}
 
     def all(self):
-        return (self.__objects)
+        """returns returns the dictionary __objects
+        """
+
+        return FileStorage.__objects
 
     def new(self, obj):
-        self.__objects[f"{obj.__class__.__name__}.{obj.id}"] = obj
+        """sets in __objects the obj with key <obj class name>.id
+        """
+        key = f"{obj.__class__.__name__}.{obj.id}"
+        FileStorage.__objects[key] = obj
 
     def save(self):
-        with open(self.__file_path, "w") as f:
-            json.dump(self.__objects, f)
+        """serializes __objects to the JSON file (path: __file_path)
+        """
+        with open(FileStorage.__file_path, "w", encoding="utf-8") as f:
+            my_dict = {}
+            for key, value in FileStorage.__objects.items():
+                my_dict[key] = value.to_dict()
+            json.dump(my_dict, f)
 
     def reload(self):
-        if os.path.isfile(self.__file_path):
-            with open(self.__file_path, "r") as f:
-                self.__objects = json.load(f)
-        else:
-            self.__objects = {}
+        """deserializes from a json file
+        """
 
-    for key, value in self.__objects.items():
-        cls_name, id = key.split(".")
-        cls = cls_upadte[cls_name]
-    self.__objects[key] = cls(**value)
+        class_dict = {
+                "BaseModel": BaseModel,
+                "User": User,
+                "State": State,
+                "City": City,
+                "Amenity": Amenity,
+                "Place": Place,
+                "Review": Review
+                }
+        obj = FileStorage.__objects
+        try:
+            with open(FileStorage.__file_path, "r", encoding="utf-8") as f:
+                json_data = json.load(f)
+                for key, value in json_data.items():
+                    obj[key] = class_dict[value["__class__"]](**value)
+        except FileNotFoundError:
+            pass
