@@ -1,0 +1,40 @@
+.amenities {
+    margin-top: 40px;
+}
+
+.amenities h2 {
+    font-size: 16px;
+    border-bottom: #DDDDDD 1px solid;
+}
+
+.amenities ul {
+    list-style: none;
+    background-image: url(styles/images/icon_pets.png);
+}
+
+.amenities li {
+    background-image: url(styles/images/icon_tv.png);
+    background-image: url(styles/images/icon_wifi.png);
+}
+
+.reviews {
+    margin-top: 40px;
+}
+
+.reviews h2 {
+    font-size: 16px;
+    border-bottom: #DDDDDD 1px solid;
+}
+
+.reviews ul,
+.reviews li {
+    list-style: none;
+}
+
+.reviews h3 {
+    font-size: 14px;
+}
+
+.reviews p {
+    font-size: 12px;
+}
