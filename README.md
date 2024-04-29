@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<p Background Context
+Background Context
 Environment variables will be your best friend for this project!
 
 HBNB_ENV: running environment. It can be “dev” or “test” for the moment (“production” soon!)
@@ -13,11 +13,11 @@ HBNB_MYSQL_USER: the username of your MySQL
 HBNB_MYSQL_PWD: the password of your MySQL
 HBNB_MYSQL_HOST: the hostname of your MySQL
 HBNB_MYSQL_DB: the database name of your MySQL
-HBNB_TYPE_STORAGE: the type of storage used. It can be “file” (using FileStorage) or db (using DBStorage)>
+HBNB_TYPE_STORAGE: the type of storage used. It can be “file” (using FileStorage) or db (using DBStorage)
 
 <br>
 
-<b Resources
+Resources
 Read or watch:
 
 cmd module
@@ -30,15 +30,14 @@ Python3 and environment variables
 SQLAlchemy
 MySQL 8.0 SQL Statement Syntax
 Learning Objectives
-></b>
 
 <br>
 
-<em At the end of this project, you are expected to be able to explain to anyone, without the help of Google:></em>
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 <strong General :></strong>
 
-<code What is Unit testing and how to implement it in a large project
+ What is Unit testing and how to implement it in a large project
 What is *args and how to use it
 What is **kwargs and how to use it
 How to handle named arguments in a function
@@ -92,4 +91,4 @@ All SQL keywords should be in uppercase (SELECT, WHERE…)
 A README.md file, at the root of the folder of the project, is mandatory
 The length of your files will be tested using wc
 GitHub
-There should be one project repository per group. If you clone/fork/whatever a partner’s project repository with the same name before the second deadline, you risk a 0% score.></code>
+There should be one project repository per group. If you clone/fork/whatever a partner’s project repository with the same name before the second deadline, you risk a 0% score.
