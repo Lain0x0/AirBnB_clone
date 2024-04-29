@@ -13,15 +13,15 @@
 <br>
 <p>Environment variables will be your best friend for this project!</p>
 <br>
-<h2>HBNB_ENV: running environment. It can be “dev” or “test” for the moment (“production” soon!)</h2>
-<h2>HBNB_MYSQL_USER: the username of your MySQL</h2>
-<h2>HBNB_MYSQL_PWD: the password of your MySQL</h2>
-<h2>HBNB_MYSQL_HOST: the hostname of your MySQL</h2>
-<h2>HBNB_MYSQL_DB: the database name of your MySQL</h2>
-<h2>HBNB_TYPE_STORAGE: the type of storage used. It can be “file” (using FileStorage) or db (using DBStorage)</h2>
 
-
-<br>
+<ul>
+    <li>HBNB_ENV: running environment. It can be “dev” or “test” for the moment (“production” soon!)</li>
+    <li>HBNB_MYSQL_USER: the username of your MySQL</li>
+    <li>HBNB_MYSQL_PWD: the password of your MySQL</li>
+    <li>HBNB_MYSQL_HOST: the hostname of your MySQL</li>
+    <li>HBNB_MYSQL_DB: the database name of your MySQL</li>
+    <li>HBNB_TYPE_STORAGE: the type of storage used. It can be “file” (using FileStorage) or db (using DBStorage)</li>
+</ul>
 
 <b>Resources</b>
 
