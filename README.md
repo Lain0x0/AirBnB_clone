@@ -1,12 +1,12 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AirBnB_clone_v2</title>
 </head>
 <body>
     <header>
-        <h1>Clonning AirBnB</h1>
+        <h1>Cloning AirBnB</h1>
     </header>
 
     <section>
@@ -91,4 +91,5 @@
 
 </body>
 </html>
+-->
 
