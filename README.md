@@ -3,7 +3,7 @@
 <meta charset='utf-8'>
 <head>
 
-<img src='https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png'>
+<img src='https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240429%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240429T161015Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=6b5f3693617770afa45afaf1909be2007450b614ffa0d0a1906525dd76724214'>
 
 </head>
 
@@ -65,7 +65,7 @@ Resources
 At the end of this project, you are expected to be able to explain to anyone, without the help
 </em>
 
-<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/815046647d23428a14ca.png">
+<img src='https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240429%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240429T161015Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3015022b076ce79dccf261b223215497a739d628f3f9509f3d4062885ea175b5'>
 
 </body>
 </html>
