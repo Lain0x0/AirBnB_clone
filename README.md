@@ -1,7 +1,7 @@
 <img src='https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step2.png'>
 
 
-Background Context
+<p "Background Context
 Environment variables will be your best friend for this project!
 
 HBNB_ENV: running environment. It can be “dev” or “test” for the moment (“production” soon!)
@@ -80,4 +80,4 @@ All SQL keywords should be in uppercase (SELECT, WHERE…)
 A README.md file, at the root of the folder of the project, is mandatory
 The length of your files will be tested using wc
 GitHub
-There should be one project repository per group. If you clone/fork/whatever a partner’s project repository with the same name before the second deadline, you risk a 0% score.
+There should be one project repository per group. If you clone/fork/whatever a partner’s project repository with the same name before the second deadline, you risk a 0% score.">
